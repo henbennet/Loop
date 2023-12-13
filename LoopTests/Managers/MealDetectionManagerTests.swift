@@ -200,7 +200,7 @@ class MealDetectionManagerTests: XCTestCase {
         carbStore = CarbStore(
             cacheStore: PersistenceController(directoryURL: URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true).appendingPathComponent(UUID().uuidString, isDirectory: true)),
             cacheLength: .hours(24),
-            defaultAbsorptionTimes: (fast: .minutes(30), medium: .hours(3), slow: .hours(5)),
+            defaultAbsorptionTimes: (fast: .minutes(30), medium: .hours(4), slow: .hours(5)),
             overrideHistory: TemporaryScheduleOverrideHistory(),
             provenanceIdentifier: Bundle.main.bundleIdentifier!,
             test_currentDate: testType.currentDate)

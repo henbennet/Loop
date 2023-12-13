@@ -54,7 +54,7 @@ class MockCarbStore: CarbStoreProtocol {
     
     var delta: TimeInterval = .minutes(5)
     
-    var defaultAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(3), slow: .hours(5))
+    var defaultAbsorptionTimes: CarbStore.DefaultAbsorptionTimes = (fast: .minutes(30), medium: .hours(4), slow: .hours(5))
     
     var authorizationRequired: Bool = false
     
